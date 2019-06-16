@@ -1,0 +1,268 @@
+@media (max-width: 575.98px) {
+    .hero-bg img {
+        height: 100%;
+        width: auto;
+    }
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        display: none;
+    }
+    a.menu-link {
+        font-size: 30px;
+    }
+
+    .project-detail-item {
+        width: 100% !important;
+    }
+    .project-detail-icon {
+        margin: 20px 0;
+    }
+
+
+    .project-detail-icon img {
+        max-width: 60%;
+    }
+
+    .about-text-bg {
+        display: none;
+    }
+
+    .left-bg {
+        display: none
+    }
+
+    .right-bg {
+        display: none;
+    }
+
+    .toggle-btn::before {
+        display: none;
+    }
+    .hero-title h1 {
+        font-size: 40px;
+    }
+    .links::before {
+        display: none;
+    }
+    .news-text p {
+        display: none;
+    }
+    .hero-title {
+        padding: 0 30px;
+    }
+    .solution-paragraph {
+      width: 383px;
+    }
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (min-width: 575.98px) and (max-width: 767.98px) {
+    .address-menu {
+        display: none;
+    }
+    .links::before {
+        display: none;
+    }
+    .left-bg {
+        display: none
+    }
+
+    .right-bg {
+        display: none;
+    }
+    .project-detail-icon {
+        margin: 20px 0;
+    }
+
+
+    .project-detail-icon img {
+        max-width: 40%;
+    }
+
+    .toggle-btn::before {
+        display: none;
+    }
+    .hero-title h1 {
+        font-size: 40px;
+    }
+    .solution-paragraph {
+      width: 383px;
+    }
+}
+
+@media (max-width: 767.98px){
+    .toggle-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        margin-top: 50px;
+        width: 50px;
+        height: 50px;
+        right: 3%;
+        border: 1px solid #05D2FF;
+        z-index: 1000;
+    }
+
+    .one {
+        display: block;
+        position: relative;
+        width: 25px;
+        height: 1px;
+        background: #000;
+    }
+
+    .two {
+        display: block;
+        position: relative;
+        width: 25px;
+        height: 1px;
+        background: #000;
+        margin-top: 4px;
+    }
+
+    .tre {
+        display: block;
+        position: relative;
+        width: 25px;
+        height: 1px;
+        background: #000;
+        margin-top: 4px;
+    }
+
+    .menu {
+
+
+        z-index: 98;
+        height: 100vh;
+        width: 100%;
+        background-color: #fff;
+
+    }
+
+}
+
+@media (min-width: 768px){
+    .menu{
+        opacity: 1!important;
+        visibility: visible!important;
+        z-index: 999;
+        right: 3%;
+        top: 50px;
+    }
+
+    .menu li{
+        opacity: 1!important;
+        display: inline-block;
+        transform: matrix(1, 0, 0, 1, 0, 0)!important;
+    }
+
+    a.menu-link{
+        font-size: 20px;
+        opacity: 1;
+    }
+
+    a.menu-link:hover {
+        opacity: .5;
+    }
+
+
+    .links::before{
+        display: none;
+    }
+
+    .section-description-conclusion {
+
+        column-count: 2;
+        column-gap: 40px;
+
+    }
+
+
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+
+  .solution-paragraph {
+    width: 383px;
+  }
+    .left-bg {
+        display: none
+    }
+
+
+    .right-bg {
+        display: none;
+    }
+    .project-detail-icon {
+        margin: 20px 0;
+    }
+
+
+    .project-detail-icon img {
+        max-width: 40%;
+    }
+    .preference-test-1 {
+  padding: 10px;
+  min-height: 263px;
+}
+
+}
+
+
+
+
+/* // Medium devices (tablets, less than 992px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    .left-bg {
+        display: none
+    }
+
+    .right-bg {
+        display: none;
+    }
+
+}
+
+@media (min-width: 992px){
+    a.menu-link{
+        font-size: 28px;
+    }
+    .image-solution-empresario{
+        padding-left: 11%;
+        padding-right: 11%;
+    }
+
+    .contact-item h3{
+        margin-bottom: 15px;
+    }
+}
+
+
+/* // Large devices (desktops, less than 1200px) RETINA */
+@media (min-width: 1200px) and (max-width: 4000px) {
+    .work-item {
+        height: 350px;
+    }
+
+    .mt-60-lg {
+        margin-top: 60px !important;
+    }
+
+    .preference-test-1 {
+  padding: 10px;
+  max-height: 264px;
+}
+
+@media (min-width: 1400px){
+    .menu{
+        right: 5%;
+    }
+    .image-solution-empresario{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+
+}
