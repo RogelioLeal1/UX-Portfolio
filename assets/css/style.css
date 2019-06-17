@@ -35,7 +35,6 @@ body {
     background-color: #fff;
     font-family: 'futura-pt', sans-serif;
     font-size: 18px;
-    overflow: hidden;
 }
 /*preloader */
 #preloader {
@@ -1021,7 +1020,7 @@ a.phone {
 
    .project-detail-item {
        transition: all 0.3s ease;
-       padding: 30px 30px;
+       padding: 10px 10px;
        box-shadow: 0px 9px 31px 6px rgba(0, 0, 0, .1);
        overflow: hidden;
        height: 100%;
@@ -1042,7 +1041,7 @@ a.phone {
    }
 
    .project-detail-text {
-       padding: 20px 20px;
+       padding: 20px 15px;
    }
 
    .project-detail-text h3 {
