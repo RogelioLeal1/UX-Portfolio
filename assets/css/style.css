@@ -172,8 +172,8 @@ a:hover {
 }
 
 .mt-60 {
-    margin-top: 60px !;
-}
+    margin-top: 60px;
+  }
 
 .mt-60 {
     margin-top: 60px;
@@ -229,7 +229,7 @@ h5 {
 }
 
 h6 {
-  color:#0;
+  color:#828282;
   font-size: .9em;
   font-weight: 700;
   line-height:26px;
@@ -267,7 +267,6 @@ h1 span {
     font-family: 'futura-pt', sans-serif;
     font-weight: 800;
     color: #000;
-
     margin: 0;
     /* -webkit-text-stroke: 1px #fff;
     -webkit-text-fill-color: transparent; */
@@ -371,10 +370,8 @@ p.sub-title {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     -webkit-perspective: 1000;
-    perspective: 1000;
     height: 100%;
     position: fixed;
-    top: 0;
     width: 1px;
     background: rgba(0, 0, 0, .2);
     z-index: -4;
@@ -1176,7 +1173,6 @@ a.phone {
   height: 5076px;
   background-size: 100%;
   animation: 120s infiniteScroll linear infinite;
-  background-repeat-x: repeat;
   background-image: url("../img/Case-Studies/Empresario/User-Flows/Choose-Plan.svg");
   opacity: 0.30;
   filter: blur(0px);
@@ -1360,8 +1356,7 @@ p.white-font.section-description-conclusion {
 
 .text-center.heading-center-conclusion {
   margin-top: 45px;
-  margin-bottom:45px
-  max-width: 465px;
+  margin-bottom:45px;
 }
 
 .row.conclusion-paragraph {

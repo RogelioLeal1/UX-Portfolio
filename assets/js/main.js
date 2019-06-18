@@ -2,48 +2,48 @@
     "use strict";
 
     // preloader
-    $(window).on('load', function () {
-        $('#preloader').delay(350).fadeOut('slow');
+    $(window).on("load", function () {
+        $("#preloader").delay(350).fadeOut("slow");
     })
 
     //--------------------------------------------------
     // Animation on Load Hero
     //--------------------------------------------------
-    TweenMax.to('.overlay-start', 1, {
+    TweenMax.to(".overlay-start", 1, {
         delay: 1,
-        opacity: '0',
-        display: 'none',
+        opacity: "0",
+        display: "none",
     })
-    TweenMax.to('.square-overlay', 2, {
-        width: '0',
+    TweenMax.to(".square-overlay", 2, {
+        width: "0",
         delay: 2
     })
 
-    TweenMax.from('.logo', 1, {
-        y: '-100',
+    TweenMax.from(".logo", 1, {
+        y: "-100",
         delay: 2,
         autoAlpha: 0
     })
-    TweenMax.from('.toggle-btn', 1, {
-        y: '-100',
+    TweenMax.from(".toggle-btn", 1, {
+        y: "-100",
         delay: 2,
         autoAlpha: 0
     })
-    TweenMax.from('.project-detail', 1, {
-        y: '100',
+    TweenMax.from(".project-detail", 1, {
+        y: "100",
         delay: 2,
         autoAlpha: 0
     })
-    TweenMax.from('.line-single-page', 1, {
-        height: '0',
+    TweenMax.from("line-single-page", 1, {
+        height: "0",
         delay: 2,
         autoAlpha: 0
     })
-    TweenMax.staggerFrom('.title-anim', 1, {
-        y: '10',
+    TweenMax.staggerFrom(".title-anim", 1, {
+        y: "10",
         delay: 2,
         autoAlpha: 0
-    }, '-0.25')
+    }, "-0.25")
 
 
 
@@ -56,25 +56,25 @@
         var bodyScroll = wind.scrollTop();
 
         if (bodyScroll > 200) {
-            TweenMax.to('.toggle-btn', 0.4, {
-                y: '-40'
+            TweenMax.to(".toggle-btn", 0.4, {
+                y: "-40"
             })
 
-            TweenMax.to('.logo', 0.4, {
-                y: '-10'
+            TweenMax.to(".logo", 0.4, {
+                y: "-10"
             })
-            TweenMax.to('.bg-nav', 0.4, {
-                y: '0'
+            TweenMax.to(".bg-nav", 0.4, {
+                y: "0"
             })
         } else {
-            TweenMax.to('.logo', 0.4, {
-                y: '0'
+            TweenMax.to(".logo", 0.4, {
+                y: "0"
             })
-            TweenMax.to('.toggle-btn', 0.4, {
-                y: '0'
+            TweenMax.to(".toggle-btn", 0.4, {
+                y: "0"
             })
-            TweenMax.to('.bg-nav', 0.4, {
-                y: '-88'
+            TweenMax.to(".bg-nav", 0.4, {
+                y: "-88"
             })
         }
     });
@@ -84,15 +84,15 @@
     //--------------------------------------------------
     // Animation on Toggle button
     //--------------------------------------------------
-    $(".toggle-btn").on('mouseenter', function () {
-        TweenMax.to('.toggle-btn span', 0.2, {
-            scale: '1.2'
+    $(".toggle-btn").on("mouseenter", function () {
+        TweenMax.to(".toggle-btn span", 0.2, {
+            scale: "1.2"
         })
     })
 
-    $(".toggle-btn").on('mouseleave', function () {
-        TweenMax.to('.toggle-btn span', 0.2, {
-            scale: '1'
+    $(".toggle-btn").on("mouseleave", function () {
+        TweenMax.to(".toggle-btn span", 0.2, {
+            scale: "1"
         })
     })
 
@@ -112,7 +112,7 @@
 
         animateLine
             .from(lines, 0.3, {
-                height: '0',
+                height: "0",
                 ease: Power4.easeOut
             });
 
@@ -132,11 +132,11 @@
     $(".project-section").each(function () {
         var controller = new ScrollMagic.Controller();
         var imgProject = $(this).find("img"),
-            bgProject = $(this).find('.left-bg'),
-            titleProject = $(this).find('.title'),
+            bgProject = $(this).find(".left-bg"),
+            titleProject = $(this).find(".title"),
             itemProject = $(this).find(".project-content"),
             subtitle = $(this).find(".detail-project"),
-            btn = $(this).find('.btn-main');
+            btn = $(this).find(".btn-main");
         var animateIn = new TimelineMax({
             repeat: false,
             paused: false,
@@ -145,11 +145,11 @@
 
         animateIn
             .from(bgProject, 0.5, {
-                width: '1',
+                width: "1",
                 ease: Power4.easeOut
             })
             .from(titleProject, 0.5, {
-                autoAlpha: '0',
+                autoAlpha: "0",
                 y: 100,
                 ease: Power4.easeOut
             })
@@ -159,19 +159,19 @@
                 ease: Power4.easeOut
             })
             .to(imgProject, 0.5, {
-                filter: 'none',
+                filter: "none",
                 ease: Power4.easeOut
             })
             .from(subtitle, 0.5, {
                 autoAlpha: 0,
                 height: 0,
                 ease: Power4.easeOut
-            }, '-=0.5')
+            }, "-=0.5")
             .from(btn, 0.5, {
                 autoAlpha: 0,
                 height: 0,
                 ease: Power4.easeOut
-            }, '-=0.5');
+            }, "-=0.5");
 
         var scene = new ScrollMagic.Scene({
                 offset: -150,
@@ -204,7 +204,7 @@
         animateAbout
             .from(bgAbout, 0.3, {
                 autoAlpha: 0,
-                width: '0',
+                width: "0",
                 ease: Power4.easeOut
             })
             .from(imgAbout, 0.3, {
@@ -257,18 +257,18 @@
         animateContact
             .from(bgContact, 0.3, {
 
-                width: '0',
+                width: "0",
                 ease: Power4.easeOut
             })
             .from(titleContact, 0.3, {
-                y: '100',
+                y: "100",
                 autoAlpha: 0,
             })
             .from(itemContact, 0.3, {
                 autoAlpha: 0,
             })
             .from(imgContact, 0.3, {
-                y: '100',
+                y: "100",
                 autoAlpha: 0,
             });
 
@@ -302,47 +302,47 @@
         tlLeftRight.add([
             TweenMax.fromTo(swipeSide, 3, {
                 y: 40,
-                delay: '1'
+                delay: "1"
             }, {
                 y: -60,
                 ease: Linear.easeNone,
-                delay: '1'
+                delay: "1"
             }),
             TweenMax.fromTo(swipeSide2, 3, {
                 y: 150,
-                delay: '1'
+                delay: "1"
             }, {
                 y: -40,
                 ease: Linear.easeNone,
-                delay: '0'
+                delay: "0"
             }),
             TweenMax.fromTo(front, 3, {
                 y: 90,
-                delay: '1',
+                delay: "1",
                 ease: Linear.easeNone,
             }, {
                 y: -20,
                 ease: Linear.easeNone,
-                delay: '0'
+                delay: "0"
             }),
             TweenMax.fromTo(team, 3, {
                 y: 20,
-                delay: '1'
+                delay: "1"
             }, {
                 y: -60,
                 ease: Linear.easeNone,
-                delay: '0'
+                delay: "0"
             }),
             TweenMax.fromTo(news, 3, {
                 y: 20,
-                delay: '1'
+                delay: "1"
             }, {
                 y: -60,
                 ease: Linear.easeNone,
-                delay: '0'
+                delay: "0"
             }),
             TweenMax.fromTo(detail, 3, {
-                y: '0',
+                y: "0",
 
             }, {
                 y: -100,
@@ -356,7 +356,7 @@
                 offset: -100,
                 triggerElement: this,
                 // duration: $(window).height(),
-                duration: '140%'
+                duration: "140%"
             })
 
             .setTween(tlLeftRight).addTo(controllera);
@@ -384,9 +384,9 @@
     $.scrollIt({
         upKey: 38, // key code to navigate to the next section
         downKey: 40, // key code to navigate to the previous section
-        easing: 'linear', // the easing function for animation
+        easing: "linear", // the easing function for animation
         scrollTime: 600, // how long (in ms) the animation takes
-        activeClass: 'active', // class given to the active nav element
+        activeClass: "active", // class given to the active nav element
         onPageChange: null, // function(pageIndex) that is called when page is changed
         topOffset: -100 // offste (in px) for fixed top navigation
     });
@@ -419,14 +419,14 @@
     t1.to(".menu", 1.5, {
         autoAlpha: 1,
         ease: Expo.easeOut,
-        delay: '-1.5'
+        delay: "-1.5"
     })
 
     t1.staggerFrom(".menu ul li", 1, {
         x: 100,
         opacity: 0,
         ease: Power4.easeInOut,
-    }, '0.1', '-0.01');
+    }, "0.1", "-0.01");
 
     t1.reverse();
     $(document).on("click", ".toggle-btn", function () {
@@ -440,7 +440,7 @@
     //--------------------------------------------------
     // Carousel  Script
     //--------------------------------------------------
-    $('.carousel').carousel({
+    $(".carousel").carousel({
       interval: 5000
     })
 
