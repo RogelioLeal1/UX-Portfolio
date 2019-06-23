@@ -52,6 +52,12 @@
     .solution-paragraph {
       width: 383px;
     }
+    .survey-text{
+      max-width: 300px;
+    }
+    .center-row.row {
+    justify-content: center;
+}
 }
 
 /* // Extra small devices (portrait phones, less than 576px) */
@@ -204,7 +210,9 @@
     }
     .preference-test-1 {
   padding: 10px;
-  min-height: 263px;
+}
+.pref-test.border{
+  padding:25px 130px 25px;
 }
 
 }
@@ -252,7 +260,6 @@
 
     .preference-test-1 {
   padding: 10px;
-  max-height: 264px;
 }
 
 @media (min-width: 1400px){
